@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alice Zhou Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .w3-half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+            .w3-half img:hover {
+                opacity: 1
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-light-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+        <br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+        <div class="w3-bar-block">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+            <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skill Sets</a>
+            <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resume</a>
+        </div>
+    </nav>
+
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="w3-container" style="margin-top:80px" id="showcase">
+            <h1 class="w3-jumbo"><b>Alice Zhou</b></h1>
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>MIS / Accounting student | University of Oklahoma.</b></h1>
+            <p>Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/-aa9213205/" target="_blank">LinkedIn Profile</a></p>
+
+            <hr style="width:5px" class="w3-round">
+        </div>
+
+        <!-- Photo -->
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="IMG_3280.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="w3-container" id="about" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>About.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>
+                Business Analyst with a strong foundation in analysis techniques and creative problem-solving. Technologically savvy and meticulous in completing documentation according to guidelines. Quick learner with excellent communication skills and a professional demeanor. Strong communication skills and a knack for problem-solving. Seeking opportunities to
+                leverage my analytical prowess and Power BI expertise to optimize and contribute to organizational success
+            </p>
+
+        </div>
+
+        <!-- Projects -->
+        <div class="w3-container" id="projects" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Projects.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>Some project that I have completed includes: </p>
+            <p>
+                <ul>
+                    <li>WPF Application - Pokemon</li>
+                    <li>WPF Application - Chuck Norris Jokes</li>
+                    <li>HTML & CSS - Organization</li>
+                    <li>Database CRUD</li>
+                </ul>
+            </p>
+            <p>Here is the link to my Repositories: <a href="https://github.com/AliceZ9407" target="_blank">Github Repositories</a></p>
+
+        </div>
+
+
+        <!-- skillsets -->
+        <div class="w3-container" id="skills" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Skill Sets.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Soft Skills</li>
+                    <li class="w3-padding-16">Communication</li>
+                    <li class="w3-padding-16">Team work/collaboration</li>
+                    <li class="w3-padding-16">Customer Service</li>
+                    <li class="w3-padding-16">Fast learner</li>
+                    <li class="w3-padding-16">Adaptability</li>
+
+                </ul>
+            </div>
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-light-blue w3-xlarge w3-padding-32">Hard Skills</li>
+                    <li class="w3-padding-16">SQL</li>
+                    <li class="w3-padding-16">Power BI</li>
+                    <li class="w3-padding-16">Tableau</li>
+                    <li class="w3-padding-16">Programming Languages (C#)</li>
+                    <li class="w3-padding-16">Filling Individual F/S Tax Return</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Resume -->
+        <div class="w3-container" id="resume" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Resume.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <p>
+                <h1>Click the link to download the Resume pdf</h1>
+                <a href="YUFEI_ZHOU_Resume.pdf" download>Download PDF</a>
+            </p>
+
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img src="Resume.JPG" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+    <script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+    </script>
+
+</body>
+</html>
